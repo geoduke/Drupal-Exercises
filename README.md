@@ -1,56 +1,61 @@
 # Drupal Onboarding Exercises
 
-## Τι είναι αυτό το repository;
+### Available translations
 
-Περιέχει μια σειρά απο εργασίες τις οποίες απαραίτητα θα μπορεί να φέρει εις πέρας κάποιος που θέλει να ξεκινήσει με το Drupal.
-Αν ασχοληθήκατε με τις εργασίες στα πλαίσια συνέντευξης/πρόσληψης τότε θα γίνει review και θα ενημερωθείτε για τα best practices,
-τα σωστά αλλά και τα λάθος σημεία, ανεξάρτητα του αποτελέσματος της πρόσληψης!
+[English](README.md) - [Ελληνικά / Greek](README.el.md)
 
-## Οδηγίες Χρήσης
+## What is this repository?
 
-- Ότι έχει αστεράκι (*) θεωρείται advanced level
-- Το σύνολο της εργασίας (χωρίς τα αστεράκια) είναι εφικτό σε 2 εργάσιμες ημέρες (16 ώρες) για κάποιον/α entry level developer που καταπιάνεται με το Drupal για πρώτη φορά
-- Η γνώση Git είναι προϋπόθεση
-- Η χρήση του [DDEV](https://github.com/ddev/ddev) είναι απαραίτητη
+It contains a series of tasks essential for someone who wants to get started with Drupal.  
+If you are working on these tasks as part of an interview/hiring process, your work will be reviewed, and you will receive feedback on best practices, correct, and incorrect points, regardless of the hiring outcome!
 
-## Drupal Site Building
+## Usage Instructions
 
-- [ ] Να κάνεις fork αυτό το repository και να κάνεις commit και push στο fork σου (κρίνε κάθε πότε πρέπει να κάνεις commit)
-- [ ] Να στήσεις το Drupal τοπικά (με το DDEV)
-- [ ] Να κάνεις την standard εγκατάσταση
-- [ ] Να κάνεις track το codebase σου με το git (προσοχή τι κάνεις track!)
-- [ ] Να κάνεις merge/pull request με τις αλλαγές σου προς το αρχικό gitlab repo
-- [ ] Να σετάρεις το configuration export folder στο `../config/sync`
-- [ ] Να εγκαταστήσεις το drush
-- [ ] Να κάνεις export το config και να το βάλεις και αυτό στο git (πρέπει να το κάνεις τακτικά αυτό το βήμα!)
-- [ ] Να φτιάξεις ένα content type `vehicle`
-- [ ] Να βάλεις τα πεδία: `ημερομηνία κυκλοφορίας` (date) και τιμή (float)
-- [ ] Να εγκαταστήσεις το open source theme με το ονομα `bartik`
-- [ ] Να φτιάξεις ένα View που να εμφανίζει τα αυτοκίνητα με σειρά κυκλοφορίας σε ένα πίνακα
-- [ ] Να βάλεις ένα exposed filter στο view για να δείχνει αυτοκίνητα νεότερα από την ημερομηνία που θα βάζει ο χρήστης 
-- [ ] Να προσθέσεις εικόνες στο content type (bonus point αν το κάνεις με media)
-- [ ] Να βάλεις taxonomy terms στο content type για το brand (πχ: ferrari, mercedes, mclaren) σε ένα vocabulary `brand`
+- Completing all tasks (without the asterisk-marked ones) is feasible within 2 working days (16 hours) for an entry-level developer working with Drupal for the first time
+- Git knowledge is a prerequisite
+- The use of [DDEV](https://github.com/ddev/ddev) is mandatory
+- Tasks marked with an asterisk (`*`) are considered advanced level, or very advanced
 
-## Frontend Drupal
+## Drupal Site Building Tasks
 
-- [ ] Να κάνεις ένα subtheme του `bartik`
-- [ ] Να κάνεις override το template του content type
-- [ ] * Να φτιάξεις ένα Single Directory Component και να το κάνεις map με το content type vehicle
+- [ ] Fork this repository and commit/push to your fork (use your judgment on when to commit)
+- [ ] Set up Drupal locally (using DDEV)
+- [ ] Perform a standard installation
+- [ ] Track your codebase with Git (be mindful of what to track!)
+- [ ] Create a merge/pull request with your changes to the original GitLab repo
+- [ ] Set the configuration export folder to `../config/sync`
+- [ ] Install Drush
+- [ ] Export the configuration and commit it to Git (do this regularly!)
+- [ ] Create a content type called `vehicle`
+- [ ] Add fields: `release date` (date) and `price` (float)
+- [ ] Install the open-source theme named `bartik`
+- [ ] Create a View displaying vehicles in a table sorted by release date
+- [ ] Add an exposed filter to the View to show vehicles newer than a user-specified date
+- [ ] Add images to the content type (bonus point if done with media)
+- [ ] Add taxonomy terms to the content type for the brand (e.g., Ferrari, Mercedes, McLaren) in a `brand` vocabulary
 
-## Backend Drupal
-  
-- [ ] Να φτιάξεις ένα custom module που θα δίνει 404 error σε κάθε αυτοκίνητο που έχει πρώτη κυκλοφορία το 2020
+## Frontend Drupal Tasks
+
+- [ ] Create a subtheme of `bartik`
+- [ ] Override the content type's template
+- [ ] * Create a Single Directory Component and map it to the `vehicle` content type
+
+## Backend Drupal Tasks
+
+- [ ] Create a custom module that returns a 404 error for any vehicle with a release date in 2020
 
 ## Drupal Migrations
 
-_Τα παρακάτω tasks είναι λογικό να χρειαστούν άνω των 30 ωρών για κάποιον/α με entry level skills._
+_The following tasks may require over 30 hours for an entry-level developer._
 
-- [ ] * Να κάνεις migrate ένα dataset (τουλάχιστον 5 items, μόνο τον τίτλο) από το JSON API του https://stapi.co/ ή του https://swapi.dev/
-- [ ] * Να εμπλουτίσεις το migration σου με τουλάχιστον 3 fields
-- [ ] * Το ένα από τα fields να είναι multivalue reference field
+- [ ] * Migrate a dataset (at least 5 items, titles only) from the JSON API of [stapi.co](https://stapi.co/) or [swapi.dev](https://swapi.dev/)
+- [ ] * Enrich your migration with at least 3 fields
+- [ ] * One of the fields should be a multi-value reference field
 
 ---
 
 #### Credits
 
-- Υλοποιήση, ανάπτυξη και ενημέρωσεις: Bill Seremetis (https://www.drupal.org/u/bserem)
+- Implementation, development, and updates: Bill Seremetis ([Drupal profile](https://www.drupal.org/u/bserem))
+
+
