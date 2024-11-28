@@ -1,4 +1,4 @@
-# Drupal Onboarding Excercises
+# Drupal Onboarding Exercises
 
 ## Τι είναι αυτό το repository;
 
