@@ -19,7 +19,7 @@ If you are working on these tasks as part of an interview/hiring process, your w
 ## Drupal Site Building Tasks
 
 - [ ] Fork this repository and commit/push to your fork (use your judgment on when to commit)
-- [ ] Set up Drupal locally (using DDEV)
+- [ ] Set up Drupal 11 locally (using DDEV)
 - [ ] Perform a standard installation
 - [ ] Track your codebase with Git (be mindful of what to track!)
 - [ ] Create a merge/pull request with your changes to the original GitLab repo
@@ -28,7 +28,7 @@ If you are working on these tasks as part of an interview/hiring process, your w
 - [ ] Export the configuration and commit it to Git (do this regularly!)
 - [ ] Create a content type called `vehicle`
 - [ ] Add fields: `release date` (date) and `price` (float)
-- [ ] Install the open-source theme named `bartik`
+- [ ] Install the open-source theme named `bartik` (caution!)
 - [ ] Create a View displaying vehicles in a table sorted by release date
 - [ ] Add an exposed filter to the View to show vehicles newer than a user-specified date
 - [ ] Add images to the content type (bonus point if done with media)
