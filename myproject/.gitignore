@@ -1,0 +1,6 @@
+vendor/
+web/sites/default/files/
+.ddev/secrets/
+*.sql
+*.tar.gz
+.env
